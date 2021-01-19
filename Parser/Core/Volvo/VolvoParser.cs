@@ -11,7 +11,15 @@ namespace Parser.Core.Volvo
     {
         public string[] Parser(IHtmlDocument document)
         {
-            throw new NotImplementedException();
+            var list = new List<string>();
+            var items = document.QuerySelectorAll("div").Where(item => item.ClassName != null && item.ClassName.Contains("product-table__qty"));
+
+            foreach (var item in items)
+            {
+                list.Add(item.TextContent);
+            }
+
+            return list.ToArray();
         }
     }
 }

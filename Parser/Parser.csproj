@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Core\IParser.cs" />
     <Compile Include="Core\IParserSettings.cs" />
+    <Compile Include="Core\ReadCsv.cs" />
     <Compile Include="Core\Volvo\VolvoParser.cs" />
     <Compile Include="Core\Volvo\VolvoSettings.cs" />
     <Compile Include="Form1.cs">
